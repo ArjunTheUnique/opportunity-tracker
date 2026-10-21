@@ -4,7 +4,7 @@ Scholarships, internships, government notifications, live exam notifications, ca
 
 Everything here is compiled from official portals and published coverage, then organised into four datasets. Each dataset comes as an **Excel workbook** (filterable), a **CSV** (reusable anywhere) and an **interactive HTML page** — and every HTML page now includes a **personal eligibility check**.
 
-Last updated: **21 October 2026**.
+Last updated: **22 October 2026**.
 
 ---
 
@@ -24,7 +24,7 @@ There's a **"Hide items I am not eligible for"** toggle, and the results bar cou
 
 ```
 opportunity-tracker/
-├── newspapers/               Press notifications log (Apr-Sep 2026)
+├── newspapers/               Press notifications log (Apr-Oct 2026)
 ├── career-magazines/         8 career / exam magazines (Apr 2025 - Oct 2026)
 ├── live-exam-notifications/  Live AP state + central exam notifications (refreshed twice weekly)
 └── study-pathways/           "What to study next" after each education level
@@ -32,9 +32,9 @@ opportunity-tracker/
 
 ### 1. `newspapers/` — press notifications log
 
-Coverage: **April – September 2026**, compiled from Eenadu (Pratibha), Sakshi (Education), Andhrajyothy, The Hindu and Times of India coverage, cross-checked against official portals.
+Coverage: **April – October 2026**, compiled from Eenadu (Pratibha), Sakshi (Education), Andhrajyothy, The Hindu and Times of India coverage, cross-checked against official portals.
 
-`Notifications_Log_Apr-Sep_2026.xlsx` · `scholarships.csv` (27) · `internships.csv` (32) · `govt-jobs-exams.csv` (26) · `Opportunity_Finder.html` (85 entries, with eligibility check)
+`Notifications_Log_Apr-Sep_2026.xlsx` · `scholarships.csv` (33) · `internships.csv` (36) · `govt-jobs-exams.csv` (33) · `Opportunity_Finder.html` (102 entries, with eligibility check)
 
 ### 2. `career-magazines/` — 8 career & exam magazines
 
@@ -42,7 +42,7 @@ Coverage: **April 2025 – October 2026**. One Excel workbook per magazine, each
 
 Magazines: Employment News · Pratiyogita Darpan · Competition Success Review · Civil Services Chronicle · Banking Services Chronicle · Samanya Gyan Darpan · Success Mirror · Udyoga Sopanam
 
-`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (193 entries) · `Career_Magazine_Finder.html` (193 entries, with eligibility check)
+`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (198 entries) · `Career_Magazine_Finder.html` (198 entries, with eligibility check)
 
 ### 3. `live-exam-notifications/` — live AP state + central exams
 
