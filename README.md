@@ -4,7 +4,7 @@ Scholarships, internships, government notifications, live exam notifications, ca
 
 Everything here is compiled from official portals and published coverage, then organised into four datasets. Each dataset comes as an **Excel workbook** (filterable), a **CSV** (reusable anywhere) and an **interactive HTML page** — and every HTML page now includes a **personal eligibility check**.
 
-Last updated: **23 October 2026**.
+Last updated: **24 October 2026**.
 
 ---
 
@@ -42,13 +42,13 @@ Coverage: **April 2025 – October 2026**. One Excel workbook per magazine, each
 
 Magazines: Employment News · Pratiyogita Darpan · Competition Success Review · Civil Services Chronicle · Banking Services Chronicle · Samanya Gyan Darpan · Success Mirror · Udyoga Sopanam
 
-`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (201 entries) · `Career_Magazine_Finder.html` (201 entries, with eligibility check)
+`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (205 entries) · `Career_Magazine_Finder.html` (205 entries, with eligibility check)
 
 ### 3. `live-exam-notifications/` — live AP state + central exams
 
 Currently open and recently closed recruitment and entrance-exam notifications, verified against official portals: APPSC, AP SLPRB, AP CET portals (EAPCET, ECET, ICET, PGECET, EdCET, LAWCET, POLYCET, PGCET, DEECET), AP High Court, Dr NTR UHS, UPSC, SSC, RRB, IBPS, SBI, RBI, NTA and defence bodies.
 
-`live-exam-notifications.csv` · `Live_Exam_Notifications.xlsx` · `Live_Exam_Notifications.html` (60 notifications, with eligibility check)
+`live-exam-notifications.csv` · `Live_Exam_Notifications.xlsx` · `Live_Exam_Notifications.html` (71 notifications, with eligibility check)
 
 Age limits here are taken **directly from each notification**, so the eligibility verdict is reliable. Where a notice gives only a birth-date window (or the age clause is in a detailed notice not yet published), the range is left blank rather than guessed.
 
