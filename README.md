@@ -4,7 +4,7 @@ Scholarships, internships, government notifications, live exam notifications, ca
 
 Everything here is compiled from official portals and published coverage, then organised into four datasets. Each dataset comes as an **Excel workbook** (filterable), a **CSV** (reusable anywhere) and an **interactive HTML page** — and every HTML page now includes a **personal eligibility check**.
 
-Last updated: **28 October 2026**.
+Last updated: **29 October 2026**.
 
 ---
 
@@ -25,7 +25,7 @@ There's a **"Hide items I am not eligible for"** toggle, and the results bar cou
 ```
 opportunity-tracker/
 ├── newspapers/               Press notifications log (Apr-Oct 2026)
-├── career-magazines/         8 career / exam magazines (Apr 2025 - Oct 2026)
+├── career-magazines/         8 career / exam magazines (Apr 2025 - Nov 2026)
 ├── live-exam-notifications/  Live AP state + central exam notifications (refreshed twice weekly)
 └── study-pathways/           "What to study next" after each education level
 ```
@@ -34,15 +34,15 @@ opportunity-tracker/
 
 Coverage: **April – October 2026**, compiled from Eenadu (Pratibha), Sakshi (Education), Andhrajyothy, The Hindu and Times of India coverage, cross-checked against official portals.
 
-`Notifications_Log_Apr-Sep_2026.xlsx` · `scholarships.csv` (33) · `internships.csv` (36) · `govt-jobs-exams.csv` (33) · `Opportunity_Finder.html` (102 entries, with eligibility check)
+`Notifications_Log_Apr-Sep_2026.xlsx` · `scholarships.csv` (50) · `internships.csv` (36) · `govt-jobs-exams.csv` (40) · `Opportunity_Finder.html` (126 entries, with eligibility check)
 
 ### 2. `career-magazines/` — 8 career & exam magazines
 
-Coverage: **April 2025 – October 2026**. One Excel workbook per magazine, each with its own Overview and Log sheet. Sections: **scholarships & fellowships, internships, admissions / entrance exams** (government job recruitment deliberately excluded).
+Coverage: **April 2025 – November 2026**. One Excel workbook per magazine, each with its own Overview and Log sheet. Sections: **scholarships & fellowships, internships, admissions / entrance exams** (government job recruitment deliberately excluded).
 
 Magazines: Employment News · Pratiyogita Darpan · Competition Success Review · Civil Services Chronicle · Banking Services Chronicle · Samanya Gyan Darpan · Success Mirror · Udyoga Sopanam
 
-`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (242 entries) · `Career_Magazine_Finder.html` (242 entries, with eligibility check)
+`<Magazine>_Log_Apr2025-Sep2026.xlsx` (8 files) · `career-magazines-log.csv` (247 entries) · `Career_Magazine_Finder.html` (247 entries, with eligibility check)
 
 ### 3. `live-exam-notifications/` — live AP state + central exams
 
@@ -68,6 +68,10 @@ A scheduled job runs **twice a week (Mondays and Thursdays, 09:00 IST)**. Each r
 2. Adds genuinely new entries (skipping duplicates, but keeping new cycles of a scheme as separate rows)
 3. Rebuilds the Excel, CSV and HTML files
 4. Pushes the updated files here and reports what was added
+
+### Update log
+
+- **29 October 2026** — APPSC extended the last date for five notifications (Group-I 07/2026, Assistant Environmental Engineer 08/2026, Horticulture Officer 19/2026, Hostel Welfare Officer Grade-II 25/2026, and Assistant Social Welfare / Tribal Welfare Officer 26/2026) to **9 November 2026**, with no further extension; all five rows updated. APPSC **Group-II (37/2026, 686 posts)** added with applications opening 10 November. Sixteen NSP scholarship schemes that were live on the portal but missing from the log were added (PM USP J&K/Ladakh, National Scholarship for PG Studies, PMSS for CAPF/Assam Rifles/Railways/police-martyrs' wards, ICAR PGS/NTS-PG/JRF-SRF, and the disability, ST and SC top-class schemes); **PM YASASVI Top Class Education in Schools** reopened to 30 November. The magazine log gained the November 2026 admissions/entrance entries (CLAT 2027, UGC NET and CSIR-UGC NET December 2026, NIFTEE 2027, NMAT 2026-27).
 
 ## Method and caveats
 
