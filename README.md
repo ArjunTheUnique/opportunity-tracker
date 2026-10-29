@@ -8,6 +8,22 @@ Last updated: **29 October 2026**.
 
 ---
 
+## Check it live
+
+Everything here is published as a browsable site — no download needed:
+
+**[arjuntheunique.github.io/opportunity-tracker](https://arjuntheunique.github.io/opportunity-tracker/)**
+
+| What | Live link |
+|---|---|
+| Landing page — everything in one place | [/](https://arjuntheunique.github.io/opportunity-tracker/) |
+| Scholarships, internships & govt notifications | [/newspapers/Opportunity_Finder.html](https://arjuntheunique.github.io/opportunity-tracker/newspapers/Opportunity_Finder.html) |
+| Career magazine content extraction | [/career-magazines/Career_Magazine_Finder.html](https://arjuntheunique.github.io/opportunity-tracker/career-magazines/Career_Magazine_Finder.html) |
+| Live AP state & central exam notifications | [/live-exam-notifications/Live_Exam_Notifications.html](https://arjuntheunique.github.io/opportunity-tracker/live-exam-notifications/Live_Exam_Notifications.html) |
+| Study pathways by level | [/study-pathways/Study_Pathways_Finder.html](https://arjuntheunique.github.io/opportunity-tracker/study-pathways/Study_Pathways_Finder.html) |
+
+---
+
 ## Check your own eligibility
 
 The three opportunity tools have a **"Filters & my profile"** panel at the top. Enter your **age** and tick your **community/caste** and **education** (and optionally gender), and every card immediately shows one of:
