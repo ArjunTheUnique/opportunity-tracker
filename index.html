@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opportunity Tracker - Scholarships, Internships, Govt Notifications & Career Magazines</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2ec; --surface:#ffffff; --surface2:#faf8f4;
+  --border:rgba(28,43,51,.12); --border-strong:rgba(28,43,51,.2);
+  --text:#1c2b33; --dim:#5b6b74; --faint:#8a979e;
+  --teal:#087f9e; --teal-bg:rgba(8,127,158,.09);
+  --green:#1a7f4b; --green-bg:rgba(26,127,75,.1);
+  --amber:#a05f03; --amber-bg:rgba(160,95,3,.1);
+  --blue:#1d5d8c; --blue-bg:rgba(29,93,140,.1);
+  --red:#a13434; --red-bg:rgba(161,52,52,.1);
+  --plum:#7a3b5e; --plum-bg:rgba(122,59,94,.1);
+  --moss:#4a5d40; --moss-bg:rgba(74,93,64,.1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'IBM Plex Sans',Segoe UI,sans-serif;background:var(--bg);color:var(--text);
+  background-image:radial-gradient(rgba(28,43,51,.045) 1px,transparent 1px);background-size:22px 22px;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+header.hero{border:1px solid var(--border);border-radius:14px;background:var(--surface);
+  padding:26px 28px;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between}
+.hero h1{font-size:26px;font-weight:700;letter-spacing:-.3px;line-height:1.2}
+.hero .sub{color:var(--dim);font-size:13.5px;margin-top:6px;max-width:700px;line-height:1.5}
+.hero .meta{font-size:12px;color:var(--faint);margin-top:8px;font-family:'IBM Plex Mono',monospace}
+.statline{display:flex;gap:10px;flex-wrap:wrap}
+.stat{border:1px solid var(--border);border-radius:10px;padding:10px 16px;background:var(--surface2)}
+.stat b{display:block;font-size:22px;font-family:'IBM Plex Mono',monospace;font-weight:600}
+.stat span{font-size:11px;color:var(--dim);letter-spacing:.4px;text-transform:uppercase}
+h2{font-size:15px;font-weight:700;letter-spacing:.2px;margin:30px 0 12px;display:flex;align-items:center;gap:9px}
+h2::before{content:'';width:4px;height:16px;border-radius:2px;background:var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{border:1px solid var(--border);border-radius:14px;background:var(--surface);padding:18px 20px;
+  display:flex;flex-direction:column;gap:9px;transition:border-color .15s,box-shadow .15s;text-decoration:none;color:inherit}
+.card:hover{border-color:var(--teal);box-shadow:0 6px 22px rgba(28,43,51,.08)}
+.card .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;letter-spacing:.6px;
+  text-transform:uppercase;padding:3px 9px;border-radius:999px;align-self:flex-start}
+.card h3{font-size:16px;font-weight:600;line-height:1.3}
+.card p{font-size:12.8px;color:var(--dim);line-height:1.55}
+.card .nums{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--faint);margin-top:auto;padding-top:6px}
+.card .go{font-size:12.5px;font-weight:600;color:var(--teal)}
+.t-sch{background:var(--green-bg);color:var(--green)}
+.t-int{background:var(--blue-bg);color:var(--blue)}
+.t-gov{background:var(--amber-bg);color:var(--amber)}
+.t-mag{background:var(--plum-bg);color:var(--plum)}
+.t-live{background:var(--red-bg);color:var(--red)}
+.t-study{background:var(--moss-bg);color:var(--moss)}
+.chg{border:1px solid var(--border-strong);border-radius:14px;background:var(--surface);padding:18px 22px}
+.chg .date{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--teal);font-weight:600;
+  letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+.chg ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.chg li{font-size:13px;color:var(--dim);line-height:1.55;padding-left:16px;position:relative}
+.chg li::before{content:'';position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.chg li b{color:var(--text);font-weight:600}
+.note{font-size:12px;color:var(--faint);line-height:1.6;margin-top:22px;border-top:1px solid var(--border);padding-top:16px}
+.note a{color:var(--teal)}
+.csvrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.csvrow a{font-family:'IBM Plex Mono',monospace;font-size:11.5px;border:1px solid var(--border-strong);
+  border-radius:7px;padding:5px 11px;text-decoration:none;color:var(--dim);background:var(--surface2)}
+.csvrow a:hover{border-color:var(--teal);color:var(--teal)}
+@media(max-width:640px){.hero{padding:20px}.wrap{padding:18px 14px 60px}.hero h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div>
+    <h1>Opportunity Tracker</h1>
+    <div class="sub">Scholarships, internships, government notifications, live exam alerts and career-magazine coverage for students and job-seekers in India, with a strong Andhra Pradesh focus. Every tool below checks your own age, community and education level against what each notice actually states.</div>
+    <div class="meta">Last updated 29 October 2026 &middot; refreshed Mondays and Thursdays, 09:00 IST</div>
+  </div>
+  <div class="statline">
+    <div class="stat"><b>503</b><span>Entries</span></div>
+    <div class="stat"><b>4</b><span>Datasets</span></div>
+  </div>
+</header>
+
+<h2>Check the lists</h2>
+<div class="grid">
+
+  <a class="card" href="newspapers/Opportunity_Finder.html">
+    <span class="tag t-sch">Scholarships</span>
+    <h3>Scholarships, internships &amp; government notifications</h3>
+    <p>One searchable board covering all three press-compiled lists, with an eligibility check against your profile.</p>
+    <div class="nums">50 scholarships &middot; 36 internships &middot; 40 govt jobs &amp; exams &middot; 126 entries total</div>
+    <span class="go">Open the Opportunity Finder &rarr;</span>
+  </a>
+
+  <a class="card" href="career-magazines/Career_Magazine_Finder.html">
+    <span class="tag t-mag">Magazines</span>
+    <h3>Career magazine content extraction</h3>
+    <p>What eight career and exam magazines carried &mdash; scholarships, fellowships, internships and admissions &mdash; April 2025 to November 2026.</p>
+    <div class="nums">247 entries &middot; Employment News, Pratiyogita Darpan, CSR, Civil Services Chronicle, Banking Services Chronicle, Samanya Gyan Darpan, Success Mirror, Udyoga Sopanam</div>
+    <span class="go">Open the Magazine Finder &rarr;</span>
+  </a>
+
+  <a class="card" href="live-exam-notifications/Live_Exam_Notifications.html">
+    <span class="tag t-live">Live exams</span>
+    <h3>Live AP state &amp; central exam notifications</h3>
+    <p>Currently open and recently closed recruitment and entrance exams, verified against official portals. Age limits here are taken directly from each notification.</p>
+    <div class="nums">92 notifications &middot; APPSC, SLPRB, AP CETs, High Court, NTR UHS, UPSC, SSC, RRB, IBPS, SBI, RBI, NTA, defence</div>
+    <span class="go">Open Live Exam Notifications &rarr;</span>
+  </a>
+
+  <a class="card" href="study-pathways/Study_Pathways_Finder.html">
+    <span class="tag t-study">Study pathways</span>
+    <h3>What to study next</h3>
+    <p>For each level you have completed, the courses you can take next &mdash; with entrance exams, eligibility, AP routes and career outcomes.</p>
+    <div class="nums">114 pathways &middot; Class 10, Intermediate, ITI, Diploma, Degree, B.Tech, Law, Medicine, PG</div>
+    <span class="go">Open Study Pathways &rarr;</span>
+  </a>
+
+</div>
+
+<h2>What changed in this update</h2>
+<div class="chg">
+  <div class="date">29 October 2026</div>
+  <ul>
+    <li><b>APPSC extended five deadlines to 9 November 2026</b> &mdash; Group-I (07/2026), Assistant Environmental Engineer (08/2026), Horticulture Officer (19/2026), Hostel Welfare Officer Grade-II (25/2026) and Assistant Social/Tribal Welfare Officer (26/2026). The Commission has said there will be no further extension.</li>
+    <li><b>APPSC Group-II (37/2026) added</b> &mdash; 686 provisional posts; applications open 10 November and close 30 November 2026.</li>
+    <li><b>17 National Scholarship Portal schemes added</b> &mdash; including PM USP J&amp;K/Ladakh, National Scholarship for PG Studies, PMSS for CAPF/Assam Rifles/Railways and wards of police personnel martyred in terror or Naxal attacks, ICAR PGS/NTS-PG/JRF-SRF, the disability, ST and SC top-class schemes, and free coaching for SCs and OBCs.</li>
+    <li><b>PM YASASVI Top Class Education in Schools reopened</b> &mdash; student applications now accepted until 30 November 2026.</li>
+    <li><b>Five November 2026 magazine entries added</b> &mdash; CLAT 2027, UGC NET December 2026, Joint CSIR-UGC NET December 2026, NIFTEE 2027 and NMAT 2026-27.</li>
+    <li><b>Stale statuses corrected</b> &mdash; Santoor, both Reliance Foundation schemes, Kotak Kanya, UPSC ESE 2027, SSC CHSL, NICL and four magazine entries now show as closed.</li>
+  </ul>
+</div>
+
+<h2>Download the raw data</h2>
+<div class="csvrow">
+  <a href="newspapers/scholarships.csv">scholarships.csv</a>
+  <a href="newspapers/internships.csv">internships.csv</a>
+  <a href="newspapers/govt-jobs-exams.csv">govt-jobs-exams.csv</a>
+  <a href="career-magazines/career-magazines-log.csv">career-magazines-log.csv</a>
+  <a href="live-exam-notifications/live-exam-notifications.csv">live-exam-notifications.csv</a>
+  <a href="study-pathways/study-pathways.csv">study-pathways.csv</a>
+</div>
+
+<div class="note">
+  <p>Every tool runs entirely in your browser &mdash; nothing you type is sent anywhere. Deadlines, fees and vacancy counts change often, so always confirm on the official link shown in each row before you rely on a date. This is an information compilation, not an endorsement and not personal career or financial advice. Apply only on official portals, never through third-party paid agents.</p>
+  <p style="margin-top:8px">Source repository: <a href="https://github.com/ArjunTheUnique/opportunity-tracker">github.com/ArjunTheUnique/opportunity-tracker</a></p>
+</div>
+
+</div>
+</body>
+</html>
